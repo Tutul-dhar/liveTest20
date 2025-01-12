@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.container {
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+svg {
+    width: 30px;
+}
+header {
+     display: flex;  /*same row te niye asar jonno */
+     align-items: center;
+     justify-content: space-between;
+     padding: 20px 0;
+}
+header .icon-cart {
+    position: relative;
+}
+header .icon-cart span {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%; /*circle*/
+    position: absolute;
+    top: 70%;
+    right: -40%;
+}
+
+/* Product card design */
+.listProduct .item img {
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.listProduct .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+.listProduct .item .description {
+    font-weight: 400;
+    font-size: medium;
+}
+.listProduct .item .price {
+    letter-spacing: 2px;
+    font-size: larger;
+}
+.listProduct .item button {
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+/* cart design start here */
+
+.cartTab {
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr  70px 70px 70px;
+    transition: 0.5s;
+}
+
+body.showCart .cartTab {
+    inset: 0 0 0 auto;
+}
+body.showCart .container {
+    transform: translateX(-250px);
+}
+
+.cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.cartTab .totalPriceToPay {
+    background-color: #d2d293;
+    color:#0009;
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    padding-left: 10px;
+    
+}
+.cartTab .promo {
+    background-color: #5f5f21;
+    color:#eee;
+    display: grid;
+    grid-template-columns: 180px 1fr 50px;
+    padding-left: 10px;
+}
+.cartTab .promo .promocode {
+    padding-top: 15px;
+    
+}
+.cartTab .promo .button {
+    padding-top: 18px;
+}
+.cartTab input {
+    width: 150px;
+    height: 30px;
+}
+.cartTab .totalPriceToPay .amount {
+    padding-top: 25px;
+    font-weight: 800;
+    font-size: larger;
+    color:#0009;
+}
+
+
+.cartTab .btn button {
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-size: 500;
+    cursor: pointer;
+}
+.cartTab .btn .close {
+    background-color: #eee;
+}
+.cartTab .listCart .item img {
+    width: 100%;
+}
+.cartTab .listCart .item {
+    display: grid;
+    grid-template-columns: 70px 80px 40px 90px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-top: 2px;
+}
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+}
+.listCart .item:nth-child(even) {
+    background-color: #eee1;
+}
+.listCart .remove .bad {
+    border-radius: 10%;
+    /* background-color: rgb(89, 139, 139); */
+    background-color: rgb(140, 140, 56);
+    color: #eee;
+}
+.listCart {
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar {
+    width: 0;
+}
+/*for responsive */
+@media screen and (max-width: 992px) {
+    .listProduct {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 662px) {
+    .listProduct {
+        grid-template-columns: repeat(2,1fr);
+    }
+}

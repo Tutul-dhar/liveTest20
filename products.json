@@ -1,0 +1,58 @@
+[
+    {
+        "id" : 1,
+        "name":"LOUNGE CHAIR1",
+        "description" : "Features a sleek and stylish look that complements contemporary spaces.",
+        "price" : 2000,
+        "image": "images/pic1.png"
+    },
+    {
+        "id" : 2,
+        "name":"LOUNGE CHAIR2",
+        "description" : "Made from high-quality materials ensuring long-term use and stability.",
+        "price" : 3000,
+        "image": "images/pic2.png"
+    },
+    {
+        "id" : 3,
+        "name":"LOUNGE CHAIR3",
+        "description" : "Easy to move around without compromising on strength.",
+        "price" : 1500,
+        "image": "images/pic3.png"
+    },
+    {
+        "id" : 4,
+        "name":"LOUNGE CHAIR4",
+        "description" : "Includes options to customize height and recline for personalized comfort.",
+        "price" : 4000,
+        "image": "images/pic4.png"
+    },
+    {
+        "id" : 5,
+        "name":"LOUNGE CHAIR5",
+        "description" : "A chair designed with ergonomic support for extended sitting.",
+        "price" : 2500,
+        "image": "images/pic5.png"
+    },
+    {
+        "id" : 6,
+        "name":"LOUNGE CHAIR6",
+        "description" : "Perfect for small spaces or minimalistic setups.",
+        "price" : 3000,
+        "image": "images/pic6.png"
+    },
+    {
+        "id" : 7,
+        "name":"LOUNGE CHAIR7",
+        "description" : "Suitable for office, dining, or casual lounging.",
+        "price" : 3500,
+        "image": "images/pic7.png"
+    },
+    {
+        "id" : 8,
+        "name":"LOUNGE CHAIR1",
+        "description" : "Constructed using sustainable and recyclable components.",
+        "price" : 2200,
+        "image": "images/pic8.png"
+    }
+]
